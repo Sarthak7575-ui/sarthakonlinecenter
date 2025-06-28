@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sarthak Online Center</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #004080;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    .ticker {
+      background-color: #ffcc00;
+      padding: 0.5rem;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+    .ticker span {
+      display: inline-block;
+      animation: scroll-left 15s linear infinite;
+    }
+    @keyframes scroll-left {
+      from { transform: translateX(100%); }
+      to { transform: translateX(-100%); }
+    }
+    .notice-board, .social-future, .services, .pdf-section, footer {
+      margin: 1rem;
+      padding: 1rem;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h2 { color: #004080; }
+    .service-card, .pdf-card {
+      border: 1px solid #ccc;
+      padding: 1rem;
+      margin: 0.5rem 0;
+      border-radius: 5px;
+    }
+    .search-bar {
+      margin: 1rem;
+      text-align: center;
+    }
+    .search-bar input {
+      padding: 0.5rem;
+      width: 80%;
+      font-size: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Sarthak Online Center</h1>
+    <p>Apno ka digital parivaar</p>
+  </header>
+
+  <div class="ticker">
+    <span>Important: Apply for PAN | Download Aadhaar | Ayushman Card Services Available | Job Form Fillings Going On | PDF Forms Added</span>
+  </div>
+
+  <div class="search-bar">
+    <input type="text" id="searchInput" onkeyup="searchServices()" placeholder="Seva ya form khojein...">
+  </div>
+
+  <div class="notice-board">
+    <h2>Notice Board</h2>
+    <ul>
+      <li>MP eDistrict par income, caste certificate update ho raha hai.</li>
+      <li>Ayushman Card download ki seva uplabdh hai.</li>
+      <li>Samagra KYC ab mandatory hai.</li>
+    </ul>
+  </div>
+
+  <div class="social-future">
+    <h2>Hamari Soch</h2>
+    <p>Sarthak Online Center ka lakshya hai nagrikon ko ek parivaar jaise sammaan ke sath digital seva dena. Har vyakti ko sarthak banane ki disha me kadam.</p>
+  </div>
+
+  <div class="services" id="services">
+    <h2>Online Services</h2>
+    <div class="service-card">
+      <h3>PAN Card Apply</h3>
+      <p><strong>Jaruri Documents:</strong> Aadhar card, photo, signature</p>
+      <p>NSDL ke madhyam se PAN Card banwayein.</p>
+      <a href="https://www.onlineservices.nsdl.com/paam/endUserRegisterContact.html">Apply Now</a>
+    </div>
+    <div class="service-card">
+      <h3>Aadhaar Card Download</h3>
+      <p><strong>Documents:</strong> Aadhaar Number & OTP</p>
+      <p>UIDAI portal se Aadhaar download karein.</p>
+      <a href="https://eaadhaar.uidai.gov.in/">Download</a>
+    </div>
+    <div class="service-card">
+      <h3>Samagra ID KYC / Print</h3>
+      <p><strong>Documents:</strong> Samagra ID, Aadhar</p>
+      <p>Samagra portal se KYC aur print seva.</p>
+      <a href="https://samagra.gov.in/">Visit Now</a>
+    </div>
+    <!-- More service-cards can be inserted here -->
+  </div>
+
+  <div class="pdf-section">
+    <h2>Download PDF Forms</h2>
+    <div class="pdf-card">
+      <p><strong>Ration Card Form</strong> – <a href="#">Download</a></p>
+    </div>
+    <div class="pdf-card">
+      <p><strong>Pension Application Form</strong> – <a href="#">Download</a></p>
+    </div>
+    <!-- More PDF cards here -->
+  </div>
+
+  <footer>
+    <p>Sampark karein: <br>Email: sunilsinghr672@gmail.com | Phone: 7000873075</p>
+    <p>Slogan: "Yeh sirf center nahi, aapka digital ghar hai!"</p>
+    <p>&copy; 2025 Sarthak Online Center</p>
+  </footer>
+
+  <script>
+    function searchServices() {
+      var input = document.getElementById("searchInput");
+      var filter = input.value.toLowerCase();
+      var cards = document.getElementsByClassName("service-card");
+      for (var i = 0; i < cards.length; i++) {
+        let card = cards[i];
+        if (card.innerText.toLowerCase().includes(filter)) {
+          card.style.display = "block";
+        } else {
+          card.style.display = "none";
+        }
+      }
+    }
+  </script>
+</body>
+</html>
