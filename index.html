@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>सार्थक ऑनलाइन सेंटर</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #e3f2fd;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #0d47a1;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    .logo {
+      width: 100px;
+      height: auto;
+    }
+    .ticker {
+      background-color: #ffeb3b;
+      padding: 0.5rem;
+      overflow: hidden;
+      white-space: nowrap;
+      font-weight: bold;
+    }
+    .ticker span {
+      display: inline-block;
+      animation: scroll-left 15s linear infinite;
+    }
+    @keyframes scroll-left {
+      from { transform: translateX(100%); }
+      to { transform: translateX(-100%); }
+    }
+    .section, .notice-board, .social-future, .services, .pdf-section, .news-section, .faq-section, footer {
+      margin: 1rem;
+      padding: 1rem;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h2 { color: #0d47a1; }
+    .service-card, .pdf-card, .news-card, .faq-item {
+      padding: 1rem;
+      margin: 0.5rem 0;
+      border-radius: 10px;
+      background: #ffffff;
+      border-left: 6px solid #0d47a1;
+      box-shadow: 1px 1px 6px rgba(0,0,0,0.1);
+    }
+    .service-card a, .pdf-card a, .news-card a {
+      color: #0d47a1;
+      text-decoration: underline;
+    }
+    .service-card ul {
+      margin-top: 0.5rem;
+      padding-left: 1.2rem;
+    }
+    .search-bar {
+      margin: 1rem;
+      text-align: center;
+    }
+    .search-bar input {
+      padding: 0.5rem;
+      width: 80%;
+      font-size: 1rem;
+    }
+    footer p {
+      margin: 0.5rem 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Emblem_of_India.svg/1200px-Emblem_of_India.svg.png" class="logo" alt="Bharat Sarkar" />
+    <h1>सार्थक ऑनलाइन सेंटर</h1>
+    <p>आपका भरोसेमंद डिजिटल साथी</p>
+  </header>
+
+  <div class="ticker">
+    <span>📢 जाति, निवास, जन्म प्रमाण पत्र | पैन / आधार / राशन कार्ड | किसान सेवाएं | छात्रवृत्ति | बैंकिंग | परीक्षा फॉर्म | डाउनलोड फॉर्म | 40+ सेवाएं उपलब्ध</span>
+  </div>
+
+  <div class="search-bar">
+    <input type="text" id="searchInput" onkeyup="searchServices()" placeholder="सेवा या फॉर्म खोजें...">
+  </div>
+
+  <div class="services">
+    <h2>📋 नई सेवाएं</h2>
+
+    <div class="service-card">
+      <strong>1. NPCI आधार बैंक लिंक स्थिति जांचें</strong>
+      <p>अपने आधार को बैंक खाते से लिंक है या नहीं, जांचने के लिए इस लिंक पर जाएं:</p>
+      <a href="https://resident.uidai.gov.in/bank-mapper" target="_blank">NPCI आधार बैंक लिंक स्थिति जांचें</a>
+    </div>
+
+    <div class="service-card">
+      <strong>2. मतदाता पहचान पत्र से संबंधित सेवाएं</strong>
+      <ul>
+        <li><a href="https://voters.eci.gov.in/" target="_blank">नया वोटर आईडी पंजीकरण</a></li>
+        <li><a href="https://electoralsearch.eci.gov.in/" target="_blank">वोटर सूची में नाम खोजें</a></li>
+        <li><a href="https://nvsp.in/" target="_blank">NVSP - वोटर सर्विस पोर्टल</a></li>
+      </ul>
+    </div>
+
+    <div class="service-card">
+      <strong>3. छात्रवृत्ति व शिक्षा पोर्टल</strong>
+      <ul>
+        <li><a href="https://scholarships.gov.in/" target="_blank">राष्ट्रीय छात्रवृत्ति पोर्टल (NSP)</a></li>
+        <li><a href="https://educationportal.mp.gov.in/" target="_blank">MP शिक्षा पोर्टल</a></li>
+        <li><a href="https://dte.mponline.gov.in/portal/Services/MPDTE/MPDTEHome.aspx" target="_blank">MP DTE इंजीनियरिंग प्रवेश</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="faq-section">
+    <h2>❓ अक्सर पूछे जाने वाले प्रश्न (FAQ)</h2>
+    <div class="faq-item">
+      <strong>Q1: जाति प्रमाण पत्र के लिए किन दस्तावेजों की आवश्यकता होती है?</strong>
+      <p>उत्तर: आधार कार्ड, समग्र आईडी, राशन कार्ड, स्कूल प्रमाण पत्र आदि।</p>
+    </div>
+    <div class="faq-item">
+      <strong>Q2: पैन कार्ड कितने दिनों में बन जाता है?</strong>
+      <p>उत्तर: सामान्यतः 7-10 कार्यदिवसों में बनकर डाक से आपके पते पर आता है।</p>
+    </div>
+    <div class="faq-item">
+      <strong>Q3: e-KYC जरूरी क्यों है?</strong>
+      <p>उत्तर: e-KYC से आपकी पहचान डिजिटल रूप से सत्यापित होती है जो कई सरकारी और निजी सेवाओं के लिए जरूरी है।</p>
+    </div>
+    <div class="faq-item">
+      <strong>Q4: समग्र ID से क्या-क्या लाभ मिलते हैं?</strong>
+      <p>उत्तर: छात्रवृत्ति, राशन कार्ड, सामाजिक सुरक्षा योजनाएं, आय प्रमाण पत्र आदि में उपयोग होता है।</p>
+    </div>
+    <div class="faq-item">
+      <strong>Q5: क्या सार्थक ऑनलाइन सेंटर से सभी सेवाएं मिलती हैं?</strong>
+      <p>उत्तर: जी हाँ, यहां 40+ सेवाएं, प्रमाण पत्र, रजिस्ट्रेशन और डाउनलोड फॉर्म की सुविधा उपलब्ध है।</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>📧 संपर्क करें: sunilsinghr672@gmail.com | 📞 फ़ोन: 7000873075</p>
+    <p>🌟 \"यह सिर्फ सेंटर नहीं, आपका डिजिटल परिवार है!\"</p>
+    <p>&copy; 2025 सार्थक ऑनलाइन सेंटर</p>
+  </footer>
+
+  <script>
+    function searchServices() {
+      var input = document.getElementById(\"searchInput\");
+      var filter = input.value.toLowerCase();
+      var cards = document.getElementsByClassName(\"service-card\");
+      for (var i = 0; i < cards.length; i++) {
+        let card = cards[i];
+        if (card.innerText.toLowerCase().includes(filter)) {
+          card.style.display = \"block\";
+        } else {
+          card.style.display = \"none\";
+        }
+      }
+    }
+  </script>
+</body>
+</html>
