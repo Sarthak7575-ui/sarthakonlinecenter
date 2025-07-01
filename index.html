@@ -137,23 +137,26 @@
       <h2>🧾 सभी सेवाएं (40+)</h2>
       <div class="service-grid">
         <div class="service-card">
-          <a href="https://myaadhaar.uidai.gov.in/login/">Aadhaar Card डाउनलोड/प्रिंट</a><br/> आधार से जुड़ी सभी सेवाएं
-          <small>
-    <strong>सेवा:</strong> आधार कार्ड डाउनलोड करना, PVC कार्ड प्रिंट कराना, QR कोड चेक करना, आदि<br><br>
-    <strong>उपयोग:</strong><br>
-    - आधार संख्या या VID (Virtual ID) की मदद से eAadhaar डाउनलोड किया जा सकता है<br>
-    - डाउनलोड किया गया Aadhaar PDF पासवर्ड प्रोटेक्टेड होता है (पासवर्ड: नाम के पहले 4 अक्षर + जन्म वर्ष)<br><br>
-    <strong>ज़रूरी दस्तावेज़:</strong><br>
-    - आधार संख्या या VID<br>
-    - रजिस्टर्ड मोबाइल नंबर (OTP के लिए)<br><br>
-    <strong>सेवाएं:</strong><br>
-    - आधार कार्ड डाउनलोड<br>
-    - PVC Aadhaar कार्ड के लिए आवेदन<br>
-    - QR कोड वेरिफिकेशन<br>
-    - Aadhaar अपडेट स्टेटस<br><br>
-    <strong>लिंक:</strong> <a href="https://eaadhaar.uidai.gov.in/" target="_blank">https://eaadhaar.uidai.gov.in/</a>
-  </small>
-        </div>
+  <button onclick="toggleDetails('aadhaar')" style="background:#1976d2; color:white; padding:8px 16px; border:none; border-radius:5px;">
+    📄 आधार कार्ड डाउनलोड / जानकारी देखें
+  </button>
+
+  <div id="aadhaar" style="display:none; margin-top:10px; background:#e3f2fd; padding:10px; border-radius:5px;">
+    <p><strong>सेवा:</strong> आधार कार्ड डाउनलोड करना, PVC प्रिंट कराना, QR कोड देखना आदि</p>
+    <p><strong>उपयोग:</strong> Aadhaar No या VID से डाउनलोड किया जा सकता है</p>
+    <p><strong>OTP:</strong> Registered Mobile पर आता है</p>
+    <p><strong>फॉर्मेट:</strong> PDF में डाउनलोड होता है (Password: नाम के पहले 4 अक्षर + जन्म वर्ष)</p>
+    <p><a href="https://myaadhaar.uidai.gov.in/login/" target="_blank" style="background:green; color:white; padding:5px 10px; border-radius:5px; text-decoration:none;">📥 आधार डाउनलोड लिंक</a></p>
+  </div>
+</div>
+
+<script>
+  function toggleDetails(id) {
+    var x = document.getElementById(id);
+    x.style.display = (x.style.display === "none") ? "block" : "none";
+  }
+</script>
+
         <div class="service-card">
           <a href="https://samagra.gov.in//">समग्र ID KYC / सदस्य पंजीयन</a>
         </div>
