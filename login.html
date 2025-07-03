@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sarthak Online Center - Wallet Login</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f0f8ff;
+    }
+    header {
+      background: url('logo.jpg') no-repeat center center;
+      background-size: cover;
+      padding: 60px 20px;
+      text-align: center;
+      color: white;
+    }
+    header h1 {
+      font-size: 32px;
+      text-shadow: 2px 2px 4px #000;
+    }
+    header p {
+      font-size: 16px;
+      text-shadow: 1px 1px 3px #000;
+    }
+    .ticker {
+      background-color: #ffeb3b;
+      padding: 10px;
+      overflow: hidden;
+      font-weight: bold;
+      white-space: nowrap;
+    }
+    .ticker span {
+      display: inline-block;
+      animation: scroll-left 20s linear infinite;
+    }
+    @keyframes scroll-left {
+      from { transform: translateX(100%); }
+      to { transform: translateX(-100%); }
+    }
+    .login-container {
+      max-width: 400px;
+      margin: 40px auto;
+      background-color: white;
+      padding: 25px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 10px;
+    }
+    h2 {
+      text-align: center;
+      color: #1976d2;
+    }
+    input[type="text"], input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-top: 8px;
+      margin-bottom: 16px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: #1976d2;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+    .register-link {
+      text-align: center;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Sarthak Online Center</h1>
+    <p>Apno Ka Center - Aapke Har Online Kaam Ka Solution</p>
+  </header>
+
+  <div class="ticker">
+    <span>📢 Latest News: SSC MTS Apply Online शुरू | Ayushman Card डाउनलोड | Samagra KYC अनिवार्य | MP ITI Admission चालू | बिजली बिल भुगतान | PF सेवा शुरू</span>
+  </div>
+
+  <div class="login-container">
+    <h2>💼 Wallet Login</h2>
+    <form>
+      <label>📱 मोबाइल नंबर:</label>
+      <input type="text" placeholder="10-digit मोबाइल नंबर" required>
+
+      <label>🔑 पासवर्ड:</label>
+      <input type="password" placeholder="********" required>
+
+      <button type="submit">🔓 लॉगिन करें</button>
+
+      <div class="register-link">
+        <p>अभी तक रजिस्टर नहीं किया? <a href="#">यहाँ रजिस्टर करें</a></p>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
