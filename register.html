@@ -68,8 +68,14 @@
       <input type="password" required>
 
       <button type="submit">रजिस्टर करें</button>
-    </form>
+    <<form onsubmit="showThankYou(); return false;">
+
   </div>
 
-</body>
+</body><script>
+  function showThankYou() {
+    alert("🎉 रजिस्ट्रेशन सफल रहा! आपकी जानकारी सुरक्षित भेज दी गई है।");
+  }
+</script>
+
 </html>
