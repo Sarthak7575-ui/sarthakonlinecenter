@@ -68,49 +68,27 @@
     .wallet-btn:hover {
       background-color: #00332f;
     }
-    .login-container {
-      max-width: 400px;
+    .iframe-container {
+      display: flex;
+      justify-content: center;
       margin: 40px auto;
-      background-color: white;
-      padding: 25px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      border-radius: 10px;
+      max-width: 500px;
     }
-    h2 {
-      text-align: center;
-      color: #1976d2;
-    }
-    input[type="text"], input[type="password"] {
+    iframe {
       width: 100%;
-      padding: 10px;
-      margin-top: 8px;
-      margin-bottom: 16px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
-    button {
-      width: 100%;
-      padding: 10px;
-      background-color: #1976d2;
-      color: white;
+      height: 700px;
       border: none;
-      border-radius: 5px;
-      font-weight: bold;
-    }
-    .register-link {
-      text-align: center;
-      margin-top: 10px;
+      border-radius: 10px;
     }
   </style>
 </head>
 <body>
   <header>
-  <h1 style="background: linear-gradient(to right, #ff69b4, #ff1493); -webkit-background-clip: text; color: transparent;">
-  Sarthak Online Center
-</h1>
-
-  <p>Apno Ka Center - Aapke Har Online Kaam Ka Solution</p>
-</header>
+    <h1 style="background: linear-gradient(to right, #ff69b4, #ff1493); -webkit-background-clip: text; color: transparent;">
+      Sarthak Online Center
+    </h1>
+    <p>Apno Ka Center - Aapke Har Online Kaam Ka Solution</p>
+  </header>
 
   <nav>
     <div>
@@ -118,45 +96,21 @@
       <a href="#notice">नोटिस</a>
       <a href="#contact">संपर्क</a>
     </div>
-   <a href="#wallet-login" class="wallet-btn">🔐 लॉगिन</a>
- </nav>
+    <a href="#wallet-login" class="wallet-btn">🔐 लॉगिन</a>
+  </nav>
 
   <div class="ticker">
     <span>📢 Latest News: SSC MTS Apply Online शुरू | Ayushman Card डाउनलोड | Samagra KYC अनिवार्य | MP ITI Admission चालू | बिजली बिल भुगतान | PF सेवा शुरू</span>
   </div>
 
-  <div id="wallet-login" class="login-container">
-    <h2>🔐 Sarthak Center Login</h2>
-  <form>
-      <label>📱 मोबाइल नंबर:</label>
-      <input type="text" placeholder="10-digit मोबाइल नंबर" required>
-
-      <label>🔑 पासवर्ड:</label>
-      <input type="password" placeholder="********" required>
-
-      <button type="submit">🔓 लॉगिन करें</button>
-    <div class="register-link">
-  <p>🔑 <a href="#">पासवर्ड भूल गए?</a></p>
- 
-      <div class="register-link">
-        <p>अभी तक रजिस्टर नहीं किया? <a href="register.html">यहाँ रजिस्टर करें</a></p>
-     
-      </div>
-    </form>
+  <div class="iframe-container" id="wallet-login">
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdhzGuSYiz02qEtTI8noUQzGzzI7AYMJk-o8W9ATKmlgzzxhA/viewform?embedded=true" width="100%" height="700" frameborder="0" marginheight="0" marginwidth="0">लोड हो रहा है…</iframe>
   </div>
+
   <footer style="background-color: #004d40; color: white; text-align: center; padding: 1rem; margin-top: 2rem;">
-  <p>📧 ईमेल: <a href="mailto:sunilsinghr672@gmail.com" style="color: #ffeb3b; text-decoration: none;">sunilsinghr672@gmail.com</a></p>
-  <p>🌐 यह वेबसाइट सार्थक ऑनलाइन सेंटर द्वारा डिज़ाइन की गई है</p>
-  <p>&copy; 2025 Sarthak Online Center</p>
-</footer>
-  <script>
-  function showThankYou() {
-    alert("🎉 रजिस्ट्रेशन सफल रहा! आपकी जानकारी सुरक्षित भेज दी गई है।");
-  }
-</script>
-
-</body>
-</html>
-
+    <p>📧 ईमेल: <a href="mailto:sunilsinghr672@gmail.com" style="color: #ffeb3b; text-decoration: none;">sunilsinghr672@gmail.com</a></p>
+    <p>🌐 यह वेबसाइट सार्थक ऑनलाइन सेंटर द्वारा डिज़ाइन की गई है</p>
+    <p>&copy; 2025 Sarthak Online Center</p>
+  </footer>
 </body>
 </html>
