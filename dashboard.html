@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>डैशबोर्ड - Sarthak Online Center</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #f1f8e9;
+    }
+    header {
+      background-color: #2e7d32;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #388e3c;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .welcome {
+      background-color: #dcedc8;
+      padding: 20px;
+      text-align: center;
+    }
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+    .card {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .card h3 {
+      color: #2e7d32;
+    }
+    footer {
+      background-color: #2e7d32;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🎉 स्वागत है सार्थक ऑनलाइन सेंटर में</h1>
+    <p>आपका डिजिटल डैशबोर्ड</p>
+  </header>
+
+  <nav>
+    <a href="#profile">मेरा प्रोफ़ाइल</a>
+    <a href="#services">सेवाएं</a>
+    <a href="#pdf">PDF फॉर्म</a>
+    <a href="#logout">लॉगआउट</a>
+  </nav>
+
+  <div class="welcome">
+    <h2>नमस्ते, उपयोगकर्ता!</h2>
+    <p>आप अब लॉगिन हो चुके हैं। नीचे से अपनी सेवा चुनें।</p>
+  </div>
+
+  <div class="card-container">
+    <div class="card">
+      <h3>📄 आधार डाउनलोड</h3>
+      <p><a href="https://myaadhaar.uidai.gov.in/" target="_blank">अब देखें</a></p>
+    </div>
+    <div class="card">
+      <h3>👨‍👩‍👧 समग्र KYC</h3>
+      <p><a href="https://samagra.gov.in/" target="_blank">अब करें</a></p>
+    </div>
+    <div class="card">
+      <h3>💳 पेंशन योजना</h3>
+      <p><a href="#">रजिस्टर करें</a></p>
+    </div>
+    <div class="card">
+      <h3>📥 PDF फॉर्म</h3>
+      <p><a href="#">डाउनलोड करें</a></p>
+    </div>
+  </div>
+
+  <footer>
+    <p>संपर्क: 7000873075 | Email: sarthakcenter@gmail.com</p>
+    <p>&copy; 2025 Sarthak Online Center</p>
+  </footer>
+</body>
+</html>
