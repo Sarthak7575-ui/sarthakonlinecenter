@@ -44,6 +44,16 @@
       font-weight: bold;
       border: none;
       border-radius: 5px;
+      cursor: pointer;
+    }
+    .back-link {
+      text-align: center;
+      margin-top: 15px;
+    }
+    .back-link a {
+      text-decoration: none;
+      color: #1976d2;
+      font-weight: bold;
     }
   </style>
 </head>
@@ -51,7 +61,7 @@
 
   <div class="register-container">
     <h2>📝 नया रजिस्ट्रेशन</h2>
-    <form>
+    <form onsubmit="showThankYou(); return false;">
       <label>पूरा नाम:</label>
       <input type="text" required>
 
@@ -68,8 +78,16 @@
       <input type="password" required>
 
       <button type="submit">रजिस्टर करें</button>
-   <form onsubmit="showThankYou(); return false;">
-
+    </form>
+    <div class="back-link">
+      <p><a href="index.html#wallet-login">🔙 वापस लॉगिन पेज पर जाएं</a></p>
+    </div>
   </div>
- </body
+
+  <script>
+    function showThankYou() {
+      alert("🎉 रजिस्ट्रेशन सफल रहा! आपकी जानकारी सुरक्षित भेज दी गई है।");
+    }
+  </script>
+</body>
 </html>
