@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Sarthak Online Center - Login</title>
+  <title>Sarthak Online Center</title>
   <style>
     body {
       margin: 0;
@@ -20,6 +20,9 @@
     header h1 {
       font-size: 32px;
       text-shadow: 2px 2px 4px #000;
+      background: linear-gradient(to right, #ff69b4, #ff1493);
+      -webkit-background-clip: text;
+      color: transparent;
     }
     header p {
       font-size: 16px;
@@ -43,7 +46,7 @@
     nav {
       background-color: #00796b;
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       align-items: center;
       padding: 0.5rem 1rem;
       flex-wrap: wrap;
@@ -57,57 +60,32 @@
     nav a:hover {
       background-color: #004d40;
     }
-    .wallet-btn {
+    footer {
       background-color: #004d40;
       color: white;
-      padding: 8px 16px;
-      border-radius: 6px;
-      font-weight: bold;
-      text-decoration: none;
-    }
-    .wallet-btn:hover {
-      background-color: #00332f;
-    }
-    .iframe-container {
-      display: flex;
-      justify-content: center;
-      margin: 40px auto;
-      max-width: 500px;
-    }
-    iframe {
-      width: 100%;
-      height: 700px;
-      border: none;
-      border-radius: 10px;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1 style="background: linear-gradient(to right, #ff69b4, #ff1493); -webkit-background-clip: text; color: transparent;">
-      Sarthak Online Center
-    </h1>
+    <h1>Sarthak Online Center</h1>
     <p>Apno Ka Center - Aapke Har Online Kaam Ka Solution</p>
   </header>
 
   <nav>
-    <div>
-      <a href="#">होम</a>
-      <a href="#notice">नोटिस</a>
-      <a href="#contact">संपर्क</a>
-    </div>
-    <a href="#wallet-login" class="wallet-btn">🔐 लॉगिन</a>
+    <a href="#">होम</a>
+    <a href="#notice">नोटिस</a>
+    <a href="#contact">संपर्क</a>
   </nav>
 
   <div class="ticker">
     <span>📢 Latest News: SSC MTS Apply Online शुरू | Ayushman Card डाउनलोड | Samagra KYC अनिवार्य | MP ITI Admission चालू | बिजली बिल भुगतान | PF सेवा शुरू</span>
   </div>
 
-  <div class="iframe-container" id="wallet-login">
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdhzGuSYiz02qEtTI8noUQzGzzI7AYMJk-o8W9ATKmlgzzxhA/viewform?embedded=true" width="100%" height="700" frameborder="0" marginheight="0" marginwidth="0">लोड हो रहा है…</iframe>
-  </div>
-
-  <footer style="background-color: #004d40; color: white; text-align: center; padding: 1rem; margin-top: 2rem;">
+  <footer>
     <p>📧 ईमेल: <a href="mailto:sunilsinghr672@gmail.com" style="color: #ffeb3b; text-decoration: none;">sunilsinghr672@gmail.com</a></p>
     <p>🌐 यह वेबसाइट सार्थक ऑनलाइन सेंटर द्वारा डिज़ाइन की गई है</p>
     <p>&copy; 2025 Sarthak Online Center</p>
