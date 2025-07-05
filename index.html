@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sarthak Online Center - Login</title>
+  <title>Sarthak Online Center - Home Dashboard</title>
   <style>
     body {
       margin: 0;
@@ -16,42 +16,54 @@
       color: white;
       text-align: center;
     }
-    .login-container {
-      max-width: 400px;
-      margin: 60px auto;
-      background-color: white;
-      padding: 25px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    .dashboard {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px;
+      gap: 15px;
+    }
+    .card {
+      background-color: #e0f2f1;
+      width: 180px;
+      height: 120px;
       border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-weight: bold;
+      color: #004d40;
+    }
+    .card.green { background-color: #a5d6a7; }
+    .card.blue { background-color: #90caf9; }
+    .card.yellow { background-color: #fff59d; }
+    .card.pink { background-color: #f8bbd0; }
+    .card img {
+      width: 32px;
+      height: 32px;
+      margin-bottom: 8px;
+    }
+    section {
+      padding: 20px;
+      background-color: #ffffff;
+      margin: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
     h2 {
-      text-align: center;
-      color: #1976d2;
-    }
-    input[type="text"], input[type="password"] {
-      width: 100%;
-      padding: 10px;
-      margin-top: 8px;
-      margin-bottom: 16px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
-    button {
-      width: 100%;
-      padding: 10px;
-      background-color: #1976d2;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      font-weight: bold;
-    }
-    .register-link {
-      text-align: center;
-      margin-top: 10px;
-    }
-    .register-link a {
       color: #00796b;
-      text-decoration: none;
+    }
+    .login-info {
+      background-color: #ffe082;
+      padding: 20px;
+      margin: 20px;
+      border-radius: 10px;
+      font-size: 1rem;
+      color: #333;
+      text-align: center;
       font-weight: bold;
     }
   </style>
@@ -62,22 +74,60 @@
     <p>आपका डिजिटल साथी</p>
   </header>
 
-  <div class="login-container">
-    <h2>🔐 लॉगिन करें</h2>
-    <form action="dashboard.html" method="get">
-      <label for="mobile">📱 मोबाइल नंबर:</label>
-      <input type="text" id="mobile" name="mobile" placeholder="10-digit मोबाइल नंबर" required>
-
-      <label for="password">🔑 पासवर्ड:</label>
-      <input type="password" id="password" name="password" placeholder="********" required>
-
-      <button type="submit">🔓 लॉगिन</button>
-
-      <div class="register-link">
-        <p><a href="#">🔑 पासवर्ड भूल गए?</a></p>
-        <p>अभी तक रजिस्टर नहीं किया? <a href="register.html">यहाँ रजिस्टर करें</a></p>
-      </div>
-    </form>
+  <div class="login-info">
+    🔒 लॉगिन सेवा अभी उपलब्ध नहीं है। सभी सेवाएं पंजीकरण के बाद अनुमोदन द्वारा चालू की जाएंगी। धन्यवाद।
   </div>
+
+  <div class="dashboard">
+    <div class="card green">
+      ₹ 139.06 <br>
+      बैलेंस
+    </div>
+    <div class="card yellow">
+      0 <br>
+      ऑपरेटर्स
+    </div>
+    <div class="card blue">
+      ₹ 0.00 <br>
+      अलॉटेड
+    </div>
+    <div class="card pink">
+      ₹ NA <br>
+      TDS 2024-25
+    </div>
+    <div class="card blue">
+      📘 <br>
+      MIS जाँचें
+    </div>
+    <div class="card green">
+      ₹ 0.00 <br>
+      रिकवरी
+    </div>
+  </div>
+
+  <section>
+    <h2>हमारे बारे में</h2>
+    <p>सार्थक ऑनलाइन सेंटर एक भरोसेमंद डिजिटल सेवा केंद्र है जहाँ सभी प्रकार की सरकारी और ऑनलाइन सेवाएं सरलता से उपलब्ध कराई जाती हैं। हमारा उद्देश्य हर नागरिक को तकनीकी रूप से सक्षम बनाना और उनके कामों को तेज़ी और सुविधा के साथ पूरा करना है।</p>
+  </section>
+
+  <section>
+    <h2>हमारी सुविधाएँ</h2>
+    <ul>
+      <li>आधार कार्ड सेवा</li>
+      <li>समग्र आईडी सेवा</li>
+      <li>बिजली बिल भुगतान</li>
+      <li>पेंशन आवेदन</li>
+      <li>नौकरी फॉर्म और एडमिट कार्ड</li>
+      <li>यात्रा बुकिंग और अन्य कई सेवाएं</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>संपर्क करें</h2>
+    <p>📧 ईमेल: <a href="mailto:sunilsinghr672@gmail.com">sunilsinghr672@gmail.com</a></p>
+    <p>📱 मोबाइल: 7000873075</p>
+    <p>🏢 पता: सार्थक ऑनलाइन सेंटर, जिला - मध्यप्रदेश</p>
+  </section>
+
 </body>
 </html>
