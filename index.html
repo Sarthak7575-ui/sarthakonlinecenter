@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sarthak Online Center - Home Dashboard</title>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   <style>
     body {
       margin: 0;
@@ -56,15 +57,18 @@
     h2 {
       color: #00796b;
     }
-    .login-info {
-      background-color: #ffe082;
+    form {
+      max-width: 400px;
+      margin: auto;
+      background: #fff;
       padding: 20px;
-      margin: 20px;
-      border-radius: 10px;
-      font-size: 1rem;
-      color: #333;
-      text-align: center;
-      font-weight: bold;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    form input, form button {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
     }
   </style>
 </head>
@@ -73,10 +77,6 @@
     <h1>सार्थक ऑनलाइन सेंटर</h1>
     <p>आपका डिजिटल साथी</p>
   </header>
-
-  <div class="login-info">
-    🔒 लॉगिन सेवा अभी उपलब्ध नहीं है। सभी सेवाएं पंजीकरण के बाद अनुमोदन द्वारा चालू की जाएंगी। धन्यवाद।
-  </div>
 
   <div class="dashboard">
     <div class="card green">
@@ -106,6 +106,16 @@
   </div>
 
   <section>
+    <h2>🔐 लॉगिन करें (Auto Approval Enabled)</h2>
+    <form action="https://formsubmit.co/YOUR_EMAIL_HERE" method="POST">
+      <input type="text" name="username" placeholder="यूज़र नाम" required>
+      <input type="password" name="password" placeholder="पासवर्ड" required>
+      <div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY_HERE"></div>
+      <button type="submit">लॉगिन करें</button>
+    </form>
+  </section>
+
+  <section>
     <h2>हमारे बारे में</h2>
     <p>सार्थक ऑनलाइन सेंटर एक भरोसेमंद डिजिटल सेवा केंद्र है जहाँ सभी प्रकार की सरकारी और ऑनलाइन सेवाएं सरलता से उपलब्ध कराई जाती हैं। हमारा उद्देश्य हर नागरिक को तकनीकी रूप से सक्षम बनाना और उनके कामों को तेज़ी और सुविधा के साथ पूरा करना है।</p>
   </section>
@@ -128,6 +138,5 @@
     <p>📱 मोबाइल: 7000873075</p>
     <p>🏢 पता: सार्थक ऑनलाइन सेंटर, जिला - मध्यप्रदेश</p>
   </section>
-
 </body>
 </html>
