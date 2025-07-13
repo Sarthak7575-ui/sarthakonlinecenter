@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarthak Online Center - Nayagaon, Umaria (MP)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Noto+Sans:wght@400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Noto Sans', sans-serif;
+        }
+        
+        .hindi {
+            font-family: 'Hind Siliguri', sans-serif;
+        }
+        
+        .scrolling-text {
+            animation: scroll 20s linear infinite;
+            white-space: nowrap;
+        }
+        
+        @keyframes scroll {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Scrolling Notice Bar -->
+    <div class="bg-yellow-400 text-black py-2 px-4 overflow-hidden">
+        <div class="flex items-center">
+            <span class="font-bold mr-4">Notice: </span>
+            <div class="flex-1 overflow-hidden">
+                <div class="scrolling-text">
+                    <span class="mr-8">सार्थक ऑनलाइन केंद्र में आपका स्वागत है | हम सरकारी योजनाओं के पंजीकरण, दस्तावेज़ जमा और अन्य ऑनलाइन सेवाएं प्रदान करते हैं |</span>
+                    <span>Welcome to Sarthak Online Center. We provide government scheme registrations, document submissions and other online services.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <div class="flex items-center mb-4 md:mb-0">
+                    <img src="https://placehold.co/80x80" alt="Sarthak Online Center logo featuring government emblem with text in Hindi and English" class="h-16 w-16 mr-4">
+                    <div>
+                        <h1 class="text-xl md:text-2xl font-bold text-blue-800">Sarthak Online Center</h1>
+                        <p class="text-sm text-gray-600">Nayagaon, Umaria (MP), India</p>
+                    </div>
+                </div>
+                
+                <div class="flex items-center space-x-4">
+                    <div class="hidden md:block">
+                        <p class="text-gray-700"><i class="fas fa-phone-alt mr-2"></i>+91 98765 43210</p>
+                        <p class="text-gray-700 text-sm"><i class="fas fa-envelope mr-2"></i>info@sarthakonlinemp.gov.in</p>
+                    </div>
+                    <button class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg flex items-center">
+                        <i class="fab fa-whatsapp mr-2"></i> WhatsApp
+                    </button>
+                </div>
+            </div>
+            
+            <nav class="mt-4">
+                <ul class="flex flex-wrap justify-center md:justify-start space-x-6 text-sm font-medium">
+                    <li><a href="#" class="text-blue-600 border-b-2 border-blue-600 pb-1">Home</a></li>
+                    <li><a href="#" class="text-gray-700 hover:text-blue-600">Services</a></li>
+                    <li><a href="#" class="text-gray-700 hover:text-blue-600">Schemes</a></li>
+                    <li><a href="#" class="text-gray-700 hover:text-blue-600">Downloads</a></li>
+                    <li><a href="#" class="text-gray-700 hover:text-blue-600">About Us</a></li>
+                    <li><a href="#" class="text-gray-700 hover:text-blue-600">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Banner -->
+    <section class="bg-blue-700 text-white py-12">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-2xl md:text-3xl font-bold mb-4">सरकारी सेवाओं का एक ही प्लेटफॉर्म</h2>
+            <h3 class="text-xl md:text-2xl mb-6">One Platform for All Government Services</h3>
+            <p class="max-w-2xl mx-auto mb-6">Register for schemes, submit documents, download forms and access various online services from the comfort of your home</p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#services" class="bg-white text-blue-700 px-6 py-2 rounded-lg font-medium hover:bg-blue-50">Our Services</a>
+                <a href="#contact" class="border-2 border-white px-6 py-2 rounded-lg font-medium hover:bg-white hover:text-blue-700">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-2">हमारी सेवाएं / Our Services</h2>
+                <div class="w-16 h-1 bg-blue-600 mx-auto"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                <!-- Service Card 1 -->
+                <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+                    <img src="https://placehold.co/600x300" alt="Aadhaar card application service with biometric verification setup" class="w-full h-40 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <i class="fas fa-id-card text-blue-600 text-2xl mr-3"></i>
+                            <h3 class="text-lg font-semibold text-gray-800">Aadhaar Services</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">Apply for new Aadhaar, update details and check status</p>
+                        <a href="https://uidai.gov.in/" target="_blank" class="text-blue-600 font-medium inline-flex items-center">Access Service <i class="fas fa-arrow-right ml-2"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Service Card 2 -->
+                <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+                    <img src="https://placehold.co/600x300" alt="PAN card application form with financial documents on a desk" class="w-full h-40 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <i class="fas fa-credit-card text-blue-600 text-2xl mr-3"></i>
+                            <h3 class="text-lg font-semibold text-gray-800">PAN Card</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">Apply for new PAN, correction or reprint of PAN card</p>
+                        <a href="https://www.onlineservices.nsdl.com/paam/endUserRegisterContact.html" target="_blank" class="text-blue-600 font-medium inline-flex items-center">Access Service <i class="fas fa-arrow-right ml-2"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Service Card 3 -->
+                <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+                    <img src="https://placehold.co/600x300" alt="Hospital setting with doctors showing Ayushman Bharat health insurance card" class="w-full h-40 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <i class="fas fa-hospital text-blue-600 text-2xl mr-3"></i>
+                            <h3 class="text-lg font-semibold text-gray-800">Ayushman Bharat</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">Register for PMJAY health insurance scheme and check eligibility</p>
+                        <a href="https://pmjay.gov.in/" target="_blank" class="text-blue-600 font-medium inline-flex items-center">Access Service <i class="fas fa-arrow-right ml-2"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Service Card 4 -->
+                <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+                    <img src="https://placehold.co/600x300" alt="Ration shop with wheat bags and electronic weighing machine" class="w-full h-40 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <i class="fas fa-wheat-alt text-blue-600 text-2xl mr-3"></i>
+                            <h3 class="text-lg font-semibold text-gray-800">Ration Card</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">Apply for new ration card, add names and check status</p>
+                        <a href="https://epds.mp.gov.in/" target="_blank" class="text-blue-600 font-medium inline-flex items-center">Access Service <i class="fas fa-arrow-right ml-2"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Service Card 5 -->
+                <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+                    <img src="https://placehold.co/600x300" alt="Computer screen showing eDistrict portal with various application options" class="w-full h-40 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <i class="fas fa-file-alt text-blue-600 text-2xl mr-3"></i>
+                            <h3 class="text-lg font-semibold text-gray-800">eDistrict Services</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">Various certificate applications (caste, income, domicile etc.)</p>
+                        <a href="https://edistrict.mp.gov.in/" target="_blank" class="text-blue-600 font-medium inline-flex items-center">Access Service <i class="fas fa-arrow-right ml-2"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Service Card 6 -->
+                <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+                    <img src="https://placehold.co/600x300" alt="MPOnline portal on a laptop with a pen and notebook beside it" class="w-full h-40 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <i class="fas fa-laptop text-blue-600 text-2xl mr-3"></i>
+                            <h3 class="text-lg font-semibold text-gray-800">MP Online</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">Multiple government services from Madhya Pradesh state</p>
+                        <a href="https://mponline.gov.in/" target="_blank" class="text-blue-600 font-medium inline-flex items-center">Access Service <i class="fas fa-arrow-right ml-2"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Service Card 7 -->
+                <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+                    <img src="https://placehold.co/600x300" alt="Farmer in field holding Kisan Credit Card with tractor in background" class="w-full h-40 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <i class="fas fa-tractor text-blue-600 text-2xl mr-3"></i>
+                            <h3 class="text-lg font-semibold text-gray-800">Kisan Credit Card</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">Apply for KCC and check application status</p>
+                        <a href="https://pmkisan.gov.in/" target="_blank" class="text-blue-600 font-medium inline-flex items-center">Access Service <i class="fas fa-arrow-right ml-2"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Service Card 8 -->
+                <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+                    <img src="https://placehold.co/600x300" alt="Voter ID card with Indian flag in the background" class="w-full h-40 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <i class="fas fa-vote-yea text-blue-600 text-2xl mr-3"></i>
+                            <h3 class="text-lg font-semibold text-gray-800">Voter ID</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">New voter registration, corrections and status check</p>
+                        <a href="https://www.nvsp.in/" target="_blank" class="text-blue-600 font-medium inline-flex items-center">Access Service <i class="fas fa-arrow-right ml-2"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-10">
+                <a href="#" class="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium">
+                    View All Services <i class="fas fa-chevron-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- PDF Downloads Section -->
+    <section class="py-12 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-2">फॉर्म डाउनलोड / Form Downloads</h2>
+                <div class="w-16 h-1 bg-blue-600 mx-auto"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Form 1 -->
+                <div class="bg-white rounded-lg shadow-md p-6 flex items-start">
+                    <div class="bg-blue-100 p-3 rounded-lg mr-4">
+                        <i class="fas fa-file-pdf text-blue-600 text-xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-medium text-gray-800 mb-1">Aadhaar Correction Form</h3>
+                        <p class="text-gray-600 text-sm mb-2">For name, address and other details update</p>
+                        <a href="https://uidai.gov.in/images/aadhaar_update_form_1.pdf" target="_blank" class="text-blue-600 text-sm font-medium inline-flex items-center">Download <i class="fas fa-download ml-1"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Form 2 -->
+                <div class="bg-white rounded-lg shadow-md p-6 flex items-start">
+                    <div class="bg-blue-100 p-3 rounded-lg mr-4">
+                        <i class="fas fa-file-pdf text-blue-600 text-xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-medium text-gray-800 mb-1">PAN Application Form</h3>
+                        <p class="text-gray-600 text-sm mb-2">Form 49A for Indian citizens</p>
+                        <a href="https://www.protean-tinpan.com/downloads/pan/download/Form49A_Fill_11072014.pdf" target="_blank" class="text-blue-600 text-sm font-medium inline-flex items-center">Download <i class="fas fa-download ml-1"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Form 3 -->
+                <div class="bg-white rounded-lg shadow-md p-6 flex items-start">
+                    <div class="bg-blue-100 p-3 rounded-lg mr-4">
+                        <i class="fas fa-file-pdf text-blue-600 text-xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-medium text-gray-800 mb-1">Ayushman Bharat Form</h3>
+                        <p class="text-gray-600 text-sm mb-2">PMJAY beneficiary registration</p>
+                        <a href="https://pmjay.gov.in/sites/default/files/2019-03/User-registration-form.pdf" target="_blank" class="text-blue-600 text-sm font-medium inline-flex items-center">Download <i class="fas fa-download ml-1"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Form 4 -->
+                <div class="bg-white rounded-lg shadow-md p-6 flex items-start">
+                    <div class="bg-blue-100 p-3 rounded-lg mr-4">
+                        <i class="fas fa-file-pdf text-blue-600 text-xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-medium text-gray-800 mb-1">Caste Certificate Form</h3>
+                        <p class="text-gray-600 text-sm mb-2">For SC/ST/OBC categories</p>
+                        <a href="https://edistrict.mp.gov.in/download/certificate/form11" target="_blank" class="text-blue-600 text-sm font-medium inline-flex items-center">Download <i class="fas fa-download ml-1"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Form 5 -->
+                <div class="bg-white rounded-lg shadow-md p-6 flex items-start">
+                    <div class="bg-blue-100 p-3 rounded-lg mr-4">
+                        <i class="fas fa-file-pdf text-blue-600 text-xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-medium text-gray-800 mb-1">Income Certificate Form</h3>
+                        <p class="text-gray-600 text-sm mb-2">For various government schemes</p>
+                        <a href="https://edistrict.mp.gov.in/download/certificate/form20" target="_blank" class="text-blue-600 text-sm font-medium inline-flex items-center">Download <i class="fas fa-download ml-1"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Form 6 -->
+                <div class="bg-white rounded-lg shadow-md p-6 flex items-start">
+                    <div class="bg-blue-100 p-3 rounded-lg mr-4">
+                        <i class="fas fa-file-pdf text-blue-600 text-xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-medium text-gray-800 mb-1">Domicile Certificate Form</h3>
+                        <p class="text-gray-600 text-sm mb-2">Proof of residence in Madhya Pradesh</p>
+                        <a href="https://edistrict.mp.gov.in/download/certificate/form19" target="_blank" class="text-blue-600 text-sm font-medium inline-flex items-center">Download <i class="fas fa-download ml-1"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-2">हमसे संपर्क करें / Contact Us</h2>
+                <div class="w-16 h-1 bg-blue-600 mx-auto"></div>
+            </div>
+            
+            <div class="flex flex-col lg:flex-row gap-8">
+                <div class="lg:w-1/2 bg-gray-50 rounded-lg overflow-hidden">
+                    <img src="https://placehold.co/800x400" alt="Map showing location of Sarthak Online Center in Nayagaon, Umaria district with surrounding landmarks" class="w-full h-64 lg:h-full object-cover">
+                </div>
+                
+                <div class="lg:w-1/2">
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-4">Sarthak Online Center</h3>
+                        
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <i class="fas fa-map-marker-alt text-blue-600 mt-1 mr-3"></i>
+                                <div>
+                                    <p class="font-medium text-gray-800">Address</p>
+                                    <p class="text-gray-600">Main Road, Near Post Office<br>Nayagaon, Umaria (MP) - 484661</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <i class="fas fa-phone-alt text-blue-600 mt-1 mr-3"></i>
+                                <div>
+                                    <p class="font-medium text-gray-800">Phone</p>
+                                    <p class="text-gray-600">+91 98765 43210<br>+91 78900 12345</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <i class="fas fa-envelope text-blue-600 mt-1 mr-3"></i>
+                                <div>
+                                    <p class="font-medium text-gray-800">Email</p>
+                                    <p class="text-gray-600">sunilsinghr672@gmail.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <i class="fas fa-clock text-blue-600 mt-1 mr-3"></i>
+                                <div>
+                                    <p class="font-medium text-gray-800">Opening Hours</p>
+                                    <p class="text-gray-600">Monday to Saturday: 9:30 AM - 6:00 PM<br>Sunday: Closed</p>
+                                </div>
+                            </div>
+                            
+                            <div class="pt-4">
+                                <button class="bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded-lg flex items-center">
+                                    <i class="fab fa-whatsapp mr-2"></i> Chat on WhatsApp
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white pt-12 pb-6">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Sarthak Online Center</h3>
+                    <p class="text-blue-200 mb-4">Your one-stop solution for all government services in Nayagaon, Umaria (MP).</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-blue-200 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-blue-200 hover:text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-blue-200 hover:text-white"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-blue-200 hover:text-white"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-blue-200 hover:text-white">Home</a></li>
+                        <li><a href="#services" class="text-blue-200 hover:text-white">Services</a></li>
+                        <li><a href="#" class="text-blue-200 hover:text-white">Schemes</a></li>
+                        <li><a href="#" class="text-blue-200 hover:text-white">Downloads</a></li>
+                        <li><a href="#contact" class="text-blue-200 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Government Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="https://mp.gov.in" target="_blank" class="text-blue-200 hover:text-white">MP Government</a></li>
+                        <li><a href="https://india.gov.in" target="_blank" class="text-blue-200 hover:text-white">India.gov.in</a></li>
+                        <li><a href="https://mponline.gov.in" target="_blank" class="text-blue-200 hover:text-white">MP Online</a></li>
+                        <li><a href="https://edistrict.mp.gov.in" target="_blank" class="text-blue-200 hover:text-white">eDistrict MP</a></li>
+                        <li><a href="https://uidai.gov.in" target="_blank" class="text-blue-200 hover:text-white">UIDAI</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Opening Hours</h3>
+                    <ul class="space-y-2">
+                        <li class="flex justify-between text-blue-200">
+                            <span>Monday - Friday</span>
+                            <span>9:30AM - 6PM</span>
+                        </li>
+                        <li class="flex justify-between text-blue-200">
+                            <span>Saturday</span>
+                            <span>9:30AM - 2PM</span>
+                        </li>
+                        <li class="flex justify-between text-blue-200">
+                            <span>Sunday</span>
+                            <span>Closed</span>
+                        </li>
+                        <li class="flex justify-between text-blue-200">
+                            <span>Public Holidays</span>
+                            <span>Closed</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-blue-800 mt-8 pt-6 text-center text-blue-300 text-sm">
+                <p>&copy; 2023 Sarthak Online Center, Nayagaon, Umaria (MP). All Rights Reserved.</p>
+                <p class="mt-1">A Government Recognized Service Center</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple WhatsApp click handler - replace with actual number for production
+        document.querySelectorAll('[href="#contact"], .fa-whatsapp').forEach(el => {
+            el.addEventListener('click', function() {
+                window.open('https://wa.me/7000873075', '_blank');
+            });
+        });
+    </script>
+</body>
+</html>
+
