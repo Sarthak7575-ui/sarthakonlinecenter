@@ -1,91 +1,109 @@
 <!DOCTYPE html>
-<html lang="en">
-<header class="flex items-center gap-4 p-4 bg-white shadow-md">
-        <img src="SARTHAK_ONLINE_CENTER_80x80.png" alt="Sarthak Online Center Logo" class="w-20 h-20">
-        <div>
-            <h1 class="text-xl font-bold">Sarthak Online Center</h1>
-            <p class="text-sm text-gray-600">Nayagaon, Umaria (M.P.)</p>
-        </div>
-        @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Noto+Sans:wght@400;500;600;700&display=swap');
-        
+<html lang="en-IN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarthak Online Center - Nayagaon, Umaria (M.P.)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap');
+
         body {
-            font-family: 'Noto Sans', sans-serif;
+            font-family: 'Poppins', 'Noto Sans Devanagari', sans-serif;
+            background-color: #f5f9ff;
         }
         
         .hindi {
-            font-family: 'Hind Siliguri', sans-serif;
+            font-family: 'Noto Sans Devanagari', sans-serif;
         }
         
-        .scrolling-text {
-            animation: scroll 20s linear infinite;
-            white-space: nowrap;
+        .scroll-container {
+            animation: scroll 15s linear infinite;
         }
         
         @keyframes scroll {
-            0% { transform: translateX(100%); }
+            0% { transform: translateX(0); }
             100% { transform: translateX(-100%); }
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 150, 0.1);
+        }
+        
+        .marquee {
+            overflow: hidden;
+            white-space: nowrap;
         }
     </style>
 </head>
 <body class="bg-gray-50">
-    <!-- Scrolling Notice Bar -->
-    <div class="bg-yellow-400 text-black py-2 px-4 overflow-hidden">
-        <div class="flex items-center">
-            <span class="font-bold mr-4">Notice: </span>
-            <div class="flex-1 overflow-hidden">
-                <div class="scrolling-text">
-                    <span class="mr-8">सार्थक ऑनलाइन केंद्र में आपका स्वागत है | हम सरकारी योजनाओं के पंजीकरण, दस्तावेज़ जमा और अन्य ऑनलाइन सेवाएं प्रदान करते हैं |</span>
-                    <span>Welcome to Sarthak Online Center. We provide government scheme registrations, document submissions and other online services.</span>
+    <!-- Header Section -->
+    <header class="bg-blue-900 text-white shadow-md">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="flex items-center mb-4 md:mb-0">
+                    <div class="mr-4">
+                        <img src="https://placehold.co/80x80" alt="Sarthak Online Center logo with government building illustration" class="h-16 w-16 rounded-full">
+                    </div>
+                    <div>
+                        <h1 class="text-xl md:text-2xl font-bold">Sarthak Online Center</h1>
+                        <p class="text-sm hindi">सार्थक ऑनलाइन सेंटर, नयागाँव, उमरिया (म.प्र.)</p>
+                    </div>
+                </div>
+                <div class="text-center md:text-right">
+                    <p class="text-sm hindi">सरकारी सेवाएँ आपके द्वार (Government Services At Your Doorstep)</p>
+                    <p class="text-sm">Approved by Umaria District Administration</p>
                 </div>
             </div>
         </div>
-    </div>
-
-    <!-- Header -->
-    <header class="bg-white shadow-md">
-        <div class="container mx-auto px-4 py-4">
-            <div class="flex flex-col md:flex-row items-center justify-between">
-                <div class="flex items-center mb-4 md:mb-0">
-                    <img src="https://placehold.co/80x80" alt="Sarthak Online Center logo featuring government emblem with text in Hindi and English" class="h-16 w-16 mr-4">
-                    <div>
-                        <h1 class="text-xl md:text-2xl font-bold text-blue-800">Sarthak Digital E-service</h1>
-                        <p class="text-sm text-gray-600">Nayagaon, Umaria (MP), India</p>
-                    </div>
-                </div>
-                
-                <div class="flex items-center space-x-4">
-                    <div class="hidden md:block">
-                        <p class="text-gray-700"><i class="fas fa-phone-alt mr-2"></i>+91 7000873075</p>
-                        <p class="text-gray-700 text-sm"><i class="fas fa-envelope mr-2"></i>sunilsinghr672@gmail.com</p>
-                    </div>
-                    <button class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg flex items-center">
-                        <i class="fab fa-whatsapp mr-2"></i> WhatsApp
-                    </button>
+        
+        <!-- Navigation -->
+        <nav class="bg-blue-800">
+            <div class="container mx-auto px-4">
+                <ul class="flex flex-wrap justify-center md:justify-start">
+                    <li><a href="#services" class="block px-4 py-2 hover:bg-blue-700 hindi">सेवाएँ (Services)</a></li>
+                    <li><a href="#updates" class="block px-4 py-2 hover:bg-blue-700 hindi">अपडेट्स (Updates)</a></li>
+                    <li><a href="#forms" class="block px-4 py-2 hover:bg-blue-700">Forms</a></li>
+                    <li><a href="#notice" class="block px-4 py-2 hover:bg-blue-700 hindi">नोटिस बोर्ड (Notice Board)</a></li>
+                    <li><a href="#contact" class="block px-4 py-2 hover:bg-blue-700">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+        <!-- Scrolling News Ticker -->
+        <div class="bg-yellow-400 text-blue-900 font-bold py-1">
+            <div class="container mx-auto px-4 overflow-hidden">
+                <div class="marquee">
+                    <span class="inline-block px-2 hindi">नया अपडेट:</span>
+                    <span class="inline-block px-2">Ayushman Bharat registration extended till 30th November</span>
+                    <span class="inline-block px-2 hindi">•</span>
+                    <span class="inline-block px-2 hindi">समग्र आईडी अपडेट के लिए आवेदन खुले</span>
+                    <span class="inline-block px-2 hindi">•</span>
+                    <span class="inline-block px-2">MPPSC Pre Exam admit cards available now</span>
                 </div>
             </div>
-            
-            <nav class="mt-4">
-                <ul class="flex flex-wrap justify-center md:justify-start space-x-6 text-sm font-medium">
-                    <li><a href="#" class="text-blue-600 border-b-2 border-blue-600 pb-1">Home</a></li>
-                    <li><a href="#" class="text-gray-700 hover:text-blue-600">Services</a></li>
-                    <li><a href="#" class="text-gray-700 hover:text-blue-600">Schemes</a></li>
-                    <li><a href="#" class="text-gray-700 hover:text-blue-600">Downloads</a></li>
-                    <li><a href="#" class="text-gray-700 hover:text-blue-600">About Us</a></li>
-                    <li><a href="#" class="text-gray-700 hover:text-blue-600">Contact</a></li>
-                </ul>
-            </nav>
         </div>
     </header>
 
-    <!-- Hero Banner -->
-    <section class="bg-blue-700 text-white py-12">
-        <div class="container mx-auto px-4 text-center">
-            <h2 class="text-2xl md:text-3xl font-bold mb-4">सरकारी सेवाओं का एक ही प्लेटफॉर्म</h2>
-            <h3 class="text-xl md:text-2xl mb-6">One Platform for All Government Services</h3>
-            <p class="max-w-2xl mx-auto mb-6">Register for schemes, submit documents, download forms and access various online services from the comfort of your home</p>
-            <div class="flex flex-wrap justify-center gap-4">
-                <a href="#services" class="bg-white text-blue-700 px-6 py-2 rounded-lg font-medium hover:bg-blue-50">Our Services</a>
-                <a href="#contact" class="border-2 border-white px-6 py-2 rounded-lg font-medium hover:bg-white hover:text-blue-700">Contact Us</a>
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-blue-700 to-blue-900 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-2/3 mb-6 md:mb-0">
+                    <h1 class="text-2xl md:text-3xl font-bold mb-4 hindi">सरकारी सेवाएँ अब आसान (Government Services Made Easy)</h1>
+                    <p class="mb-4 hindi">45+ से अधिक ऑनलाइन सेवाएँ आपके गाँव में उपलब्ध। PAN Card से लेकर Voter ID तक सभी दस्तावेज बनवाएँ।</p>
+                    <p class="mb-6">One-stop solution for all government document services at Nayagaon, Umaria.</p>
+                    <div class="relative w-full md:w-3/4">
+                        <input type="text" placeholder="Search services (e.g. PAN Card, Aadhaar)" class="w-full px-4 py-3 rounded-lg text-gray-800">
+                        <button class="absolute right-0 top-0 bg-yellow-400 text-blue-900 px-4 py-3 rounded-r-lg font-bold"><i class="fas fa-search"></i></button>
+                    </div>
+                </div>
+                <div class="md:w-1/3 flex justify-center">
+                    <img src="https://placehold.co/400x300" alt="Happy family receiving digital services from government official at counter" class="rounded-lg shadow-xl">
+                </div>
             </div>
         </div>
     </section>
@@ -93,343 +111,495 @@
     <!-- Services Section -->
     <section id="services" class="py-12 bg-white">
         <div class="container mx-auto px-4">
-            <div class="text-center mb-12">
-                <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-2">हमारी सेवाएं / Our Services</h2>
-                <div class="w-16 h-1 bg-blue-600 mx-auto"></div>
+            <h2 class="text-2xl font-bold text-center mb-2 text-blue-900">OUR SERVICES</h2>
+            <h3 class="text-xl text-center mb-8 hindi font-medium">हमारी सेवाएँ</h3>
+            
+            <!-- Categories Tabs -->
+            <div class="flex overflow-x-auto pb-2 mb-8">
+                <button class="px-4 py-2 mr-2 bg-blue-100 rounded-full font-medium text-blue-800 hindi flex-shrink-0">सभी सेवाएँ</button>
+                <button class="px-4 py-2 mr-2 bg-blue-600 text-white rounded-full font-medium flex-shrink-0">ID Cards</button>
+                <button class="px-4 py-2 mr-2 bg-blue-100 rounded-full font-medium text-blue-800 flex-shrink-0">Bill Payments</button>
+                <button class="px-4 py-2 mr-2 bg-blue-100 rounded-full font-medium text-blue-800 hindi flex-shrink-0">सरकारी योजनाएँ</button>
+                <button class="px-4 py-2 mr-2 bg-blue-100 rounded-full font-medium text-blue-800 flex-shrink-0">Job Forms</button>
+                <button class="px-4 py-2 mr-2 bg-blue-100 rounded-full font-medium text-blue-800 hindi flex-shrink-0">अन्य सेवाएँ</button>
             </div>
             
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-                <!-- Service Card 1 -->
-                <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
-                    <img src="https://placehold.co/600x300" alt="Aadhaar card application service with biometric verification setup" class="w-full h-40 object-cover">
-                    <div class="p-6">
-                        <div class="flex items-center mb-3">
-                            <i class="fas fa-id-card text-blue-600 text-2xl mr-3"></i>
-                            <h3 class="text-lg font-semibold text-gray-800">Aadhaar Services</h3>
+            <!-- Services Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <!-- PAN Card -->
+                <div class="service-card bg-white rounded-lg shadow-md p-4 border border-blue-100 transition-transform duration-300">
+                    <div class="flex items-center mb-3">
+                        <div class="bg-blue-100 p-2 rounded-lg mr-3">
+                            <i class="fas fa-id-card text-blue-700"></i>
                         </div>
-                        <p class="text-gray-600 mb-4">Apply for new Aadhaar, update details and check status</p>
-                        <a href="https://uidai.gov.in/" target="_blank" class="text-blue-600 font-medium inline-flex items-center">Access Service <i class="fas fa-arrow-right ml-2"></i></a>
+                        <h4 class="font-bold">PAN Card</h4>
+                    </div>
+                    <p class="text-sm text-gray-600 mb-3">New application, corrections, linking with Aadhaar</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded hindi">आवश्यक: आधार + फोटो</span>
+                        <button class="text-xs bg-blue-600 text-white px-3 py-1 rounded-full">Apply Now</button>
                     </div>
                 </div>
                 
-                <!-- Service Card 2 -->
-                <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
-                    <img src="https://placehold.co/600x300" alt="PAN card application form with financial documents on a desk" class="w-full h-40 object-cover">
-                    <div class="p-6">
-                        <div class="flex items-center mb-3">
-                            <i class="fas fa-credit-card text-blue-600 text-2xl mr-3"></i>
-                            <h3 class="text-lg font-semibold text-gray-800">PAN Card</h3>
+                <!-- Aadhaar -->
+                <div class="service-card bg-white rounded-lg shadow-md p-4 border border-blue-100 transition-transform duration-300">
+                    <div class="flex items-center mb-3">
+                        <div class="bg-blue-100 p-2 rounded-lg mr-3">
+                            <i class="fas fa-fingerprint text-blue-700"></i>
                         </div>
-                        <p class="text-gray-600 mb-4">Apply for new PAN, correction or reprint of PAN card</p>
-                        <a href="https://www.onlineservices.nsdl.com/paam/endUserRegisterContact.html" target="_blank" class="text-blue-600 font-medium inline-flex items-center">Access Service <i class="fas fa-arrow-right ml-2"></i></a>
+                        <h4 class="font-bold">Aadhaar Card</h4>
+                    </div>
+                    <p class="text-sm text-gray-600 mb-3 hindi">नया आधार, अपडेट, मोबाइल नंबर लिंकिंग</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded hindi">आवश्यक: पहचान, पता प्रमाण</span>
+                        <button class="text-xs bg-blue-600 text-white px-3 py-1 rounded-full">Apply Now</button>
                     </div>
                 </div>
                 
-                <!-- Service Card 3 -->
-                <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
-                    <img src="https://placehold.co/600x300" alt="Hospital setting with doctors showing Ayushman Bharat health insurance card" class="w-full h-40 object-cover">
-                    <div class="p-6">
-                        <div class="flex items-center mb-3">
-                            <i class="fas fa-hospital text-blue-600 text-2xl mr-3"></i>
-                            <h3 class="text-lg font-semibold text-gray-800">Ayushman Bharat</h3>
+                <!-- Voter ID -->
+                <div class="service-card bg-white rounded-lg shadow-md p-4 border border-blue-100 transition-transform duration-300">
+                    <div class="flex items-center mb-3">
+                        <div class="bg-blue-100 p-2 rounded-lg mr-3">
+                            <i class="fas fa-vote-yea text-blue-700"></i>
                         </div>
-                        <p class="text-gray-600 mb-4">Register for PMJAY health insurance scheme and check eligibility</p>
-                        <a href="https://pmjay.gov.in/" target="_blank" class="text-blue-600 font-medium inline-flex items-center">Access Service <i class="fas fa-arrow-right ml-2"></i></a>
+                        <h4 class="font-bold hindi">मतदाता पहचान पत्र</h4>
+                    </div>
+                    <p class="text-sm text-gray-600 mb-3">New voter ID, corrections, address change</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">Required: Address Proof</span>
+                        <button class="text-xs bg-blue-600 text-white px-3 py-1 rounded-full">Apply Now</button>
                     </div>
                 </div>
                 
-                <!-- Service Card 4 -->
-                <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
-                    <img src="https://placehold.co/600x300" alt="Ration shop with wheat bags and electronic weighing machine" class="w-full h-40 object-cover">
-                    <div class="p-6">
-                        <div class="flex items-center mb-3">
-                            <i class="fas fa-wheat-alt text-blue-600 text-2xl mr-3"></i>
-                            <h3 class="text-lg font-semibold text-gray-800">Ration Card</h3>
+                <!-- Electricity Bill -->
+                <div class="service-card bg-white rounded-lg shadow-md p-4 border border-blue-100 transition-transform duration-300">
+                    <div class="flex items-center mb-3">
+                        <div class="bg-blue-100 p-2 rounded-lg mr-3">
+                            <i class="fas fa-bolt text-blue-700"></i>
                         </div>
-                        <p class="text-gray-600 mb-4">Apply for new ration card, add names and check status</p>
-                        <a href="https://epds.mp.gov.in/" target="_blank" class="text-blue-600 font-medium inline-flex items-center">Access Service <i class="fas fa-arrow-right ml-2"></i></a>
+                        <h4 class="font-bold hindi">बिजली बिल भुगतान</h4>
+                    </div>
+                    <p class="text-sm text-gray-600 mb-3">Online bill payment, new connection, complaint</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">Required: Consumer No.</span>
+                        <button class="text-xs bg-blue-600 text-white px-3 py-1 rounded-full">Pay Now</button>
                     </div>
                 </div>
                 
-                <!-- Service Card 5 -->
-                <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
-                    <img src="https://placehold.co/600x300" alt="Computer screen showing eDistrict portal with various application options" class="w-full h-40 object-cover">
-                    <div class="p-6">
-                        <div class="flex items-center mb-3">
-                            <i class="fas fa-file-alt text-blue-600 text-2xl mr-3"></i>
-                            <h3 class="text-lg font-semibold text-gray-800">eDistrict Services</h3>
+                <!-- Ayushman Bharat -->
+                <div class="service-card bg-white rounded-lg shadow-md p-4 border border-blue-100 transition-transform duration-300">
+                    <div class="flex items-center mb-3">
+                        <div class="bg-blue-100 p-2 rounded-lg mr-3">
+                            <i class="fas fa-heartbeat text-blue-700"></i>
                         </div>
-                        <p class="text-gray-600 mb-4">Various certificate applications (caste, income, domicile etc.)</p>
-                        <a href="https://edistrict.mp.gov.in/" target="_blank" class="text-blue-600 font-medium inline-flex items-center">Access Service <i class="fas fa-arrow-right ml-2"></i></a>
+                        <h4 class="font-bold hindi">आयुष्मान भारत</h4>
+                    </div>
+                    <p class="text-sm text-gray-600 mb-3">Apply for golden card, check eligibility, hospital list</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded hindi">आवश्यक: आधार + परिवार का विवरण</span>
+                        <button class="text-xs bg-blue-600 text-white px-3 py-1 rounded-full">Apply Now</button>
                     </div>
                 </div>
                 
-                <!-- Service Card 6 -->
-                <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
-                    <img src="https://placehold.co/600x300" alt="MPOnline portal on a laptop with a pen and notebook beside it" class="w-full h-40 object-cover">
-                    <div class="p-6">
-                        <div class="flex items-center mb-3">
-                            <i class="fas fa-laptop text-blue-600 text-2xl mr-3"></i>
-                            <h3 class="text-lg font-semibold text-gray-800">MP Online</h3>
+                <!-- Samagra ID -->
+                <div class="service-card bg-white rounded-lg shadow-md p-4 border border-blue-100 transition-transform duration-300">
+                    <div class="flex items-center mb-3">
+                        <div class="bg-blue-100 p-2 rounded-lg mr-3">
+                            <i class="fas fa-id-badge text-blue-700"></i>
                         </div>
-                        <p class="text-gray-600 mb-4">Multiple government services from Madhya Pradesh state</p>
-                        <a href="https://mponline.gov.in/" target="_blank" class="text-blue-600 font-medium inline-flex items-center">Access Service <i class="fas fa-arrow-right ml-2"></i></a>
+                        <h4 class="font-bold hindi">समग्र आईडी</h4>
+                    </div>
+                    <p class="text-sm text-gray-600 mb-3 hindi">परिवार के सदस्यों को जोड़ना/हटाना</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded hindi">आवश्यक: मूल समग्र जानकारी</span>
+                        <button class="text-xs bg-blue-600 text-white px-3 py-1 rounded-full">Apply Now</button>
                     </div>
                 </div>
                 
-                <!-- Service Card 7 -->
-                <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
-                    <img src="https://placehold.co/600x300" alt="Farmer in field holding Kisan Credit Card with tractor in background" class="w-full h-40 object-cover">
-                    <div class="p-6">
-                        <div class="flex items-center mb-3">
-                            <i class="fas fa-tractor text-blue-600 text-2xl mr-3"></i>
-                            <h3 class="text-lg font-semibold text-gray-800">Kisan Credit Card</h3>
+                <!-- MPPSC Forms -->
+                <div class="service-card bg-white rounded-lg shadow-md p-4 border border-blue-100 transition-transform duration-300">
+                    <div class="flex items-center mb-3">
+                        <div class="bg-blue-100 p-2 rounded-lg mr-3">
+                            <i class="fas fa-briefcase text-blue-700"></i>
                         </div>
-                        <p class="text-gray-600 mb-4">Apply for KCC and check application status</p>
-                        <a href="https://pmkisan.gov.in/" target="_blank" class="text-blue-600 font-medium inline-flex items-center">Access Service <i class="fas fa-arrow-right ml-2"></i></a>
+                        <h4 class="font-bold">MPPSC Forms</h4>
+                    </div>
+                    <p class="text-sm text-gray-600 mb-3 hindi">नीयत/साक्षात्कार फॉर्म भरने की सुविधा</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">Required: Registration No.</span>
+                        <button class="text-xs bg-blue-600 text-white px-3 py-1 rounded-full">View Forms</button>
                     </div>
                 </div>
                 
-                <!-- Service Card 8 -->
-                <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
-                    <img src="https://placehold.co/600x300" alt="Voter ID card with Indian flag in the background" class="w-full h-40 object-cover">
-                    <div class="p-6">
-                        <div class="flex items-center mb-3">
-                            <i class="fas fa-vote-yea text-blue-600 text-2xl mr-3"></i>
-                            <h3 class="text-lg font-semibold text-gray-800">Voter ID</h3>
+                <!-- Ration Card -->
+                <div class="service-card bg-white rounded-lg shadow-md p-4 border border-blue-100 transition-transform duration-300">
+                    <div class="flex items-center mb-3">
+                        <div class="bg-blue-100 p-2 rounded-lg mr-3">
+                            <i class="fas fa-shopping-basket text-blue-700"></i>
                         </div>
-                        <p class="text-gray-600 mb-4">New voter registration, corrections and status check</p>
-                        <a href="https://www.nvsp.in/" target="_blank" class="text-blue-600 font-medium inline-flex items-center">Access Service <i class="fas fa-arrow-right ml-2"></i></a>
+                        <h4 class="font-bold hindi">राशन कार्ड</h4>
+                    </div>
+                    <p class="text-sm text-gray-600 mb-3">New application, member addition/deletion</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded hindi">आवश्यक: आवासीय प्रमाण</span>
+                        <button class="text-xs bg-blue-600 text-white px-3 py-1 rounded-full">Apply Now</button>
                     </div>
                 </div>
             </div>
             
-            <div class="text-center mt-10">
-                <a href="#" class="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium">
-                    View All Services <i class="fas fa-chevron-right ml-2"></i>
-                </a>
+            <div class="text-center mt-8">
+                <button class="bg-white border-2 border-blue-600 text-blue-600 px-6 py-2 rounded-full font-medium hover:bg-blue-50 transition">View All Services (40+)</button>
             </div>
         </div>
     </section>
 
-    <!-- PDF Downloads Section -->
-    <section class="py-12 bg-gray-50">
+    <!-- Updates Section -->
+    <section id="updates" class="py-12 bg-gray-50">
         <div class="container mx-auto px-4">
-            <div class="text-center mb-12">
-                <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-2">फॉर्म डाउनलोड / Form Downloads</h2>
-                <div class="w-16 h-1 bg-blue-600 mx-auto"></div>
+            <h2 class="text-2xl font-bold text-center mb-8 text-blue-900">LATEST UPDATES</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Vacancy Updates -->
+                <div class="bg-white rounded-lg shadow-md p-4">
+                    <div class="flex items-center mb-3 border-b pb-2">
+                        <div class="bg-red-100 p-2 rounded-lg mr-3">
+                            <i class="fas fa-user-plus text-red-600"></i>
+                        </div>
+                        <h3 class="font-bold hindi">नवीनतम रिक्तियां</h3>
+                    </div>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <div class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded mr-3">New</div>
+                            <a href="#" class="text-sm hover:text-blue-600 hindi">MPPSC Group-2 भर्ती 2023</a>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded mr-3">Today</div>
+                            <a href="#" class="text-sm hover:text-blue-600">Umaria District Nurse Vacancies</a>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded mr-3">3 days</div>
+                            <a href="#" class="text-sm hover:text-blue-600 hindi">एमपी पुलिस कांस्टेबल भर्ती 2023</a>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded mr-3">1 wk</div>
+                            <a href="#" class="text-sm hover:text-blue-600">Bank Clerk Recruitment</a>
+                        </li>
+                    </ul>
+                    <div class="text-right mt-3">
+                        <a href="#" class="text-sm text-blue-600 hover:underline">View All →</a>
+                    </div>
+                </div>
+                
+                <!-- Admit Cards -->
+                <div class="bg-white rounded-lg shadow-md p-4">
+                    <div class="flex items-center mb-3 border-b pb-2">
+                        <div class="bg-green-100 p-2 rounded-lg mr-3">
+                            <i class="fas fa-id-card text-green-600"></i>
+                        </div>
+                        <h3 class="font-bold hindi">प्रवेश पत्र अपडेट</h3>
+                    </div>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <div class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded mr-3">New</div>
+                            <a href="#" class="text-sm hover:text-blue-600">MPPSC Pre Exam 2023 Admit Card</a>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded mr-3">Today</div>
+                            <a href="#" class="text-sm hover:text-blue-600 hindi">आर्मी रिक्रूटमेंट प्रवेश पत्र</a>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded mr-3">2 days</div>
+                            <a href="#" class="text-sm hover:text-blue-600">Bank PO Prelims Admit Card</a>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded mr-3">1 wk</div>
+                            <a href="#" class="text-sm hover:text-blue-600 hindi">एमपी पटवारी परीक्षा प्रवेश पत्र</a>
+                        </li>
+                    </ul>
+                    <div class="text-right mt-3">
+                        <a href="#" class="text-sm text-blue-600 hover:underline">View All →</a>
+                    </div>
+                </div>
+                
+                <!-- Results & News -->
+                <div class="bg-white rounded-lg shadow-md p-4">
+                    <div class="flex items-center mb-3 border-b pb-2">
+                        <div class="bg-yellow-100 p-2 rounded-lg mr-3">
+                            <i class="fas fa-newspaper text-yellow-600"></i>
+                        </div>
+                        <h3 class="font-bold hindi">परिणाम & समाचार</h3>
+                    </div>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <div class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded mr-3">New</div>
+                            <a href="#" class="text-sm hover:text-blue-600">MPPSC Pre Exam 2023 Result</a>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded mr-3">Today</div>
+                            <a href="#" class="text-sm hover:text-blue-600 hindi">रोजगार कार्यालय शाखाओं में नए भर्ती</a>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded mr-3">3 days</div>
+                            <a href="#" class="text-sm hover:text-blue-600">MP Police Constable Final Result</a>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded mr-3">1 wk</div>
+                            <a href="#" class="text-sm hover:text-blue-600 hindi">स्वास्थ्य विभाग में नए पदों की भर्ती</a>
+                        </li>
+                    </ul>
+                    <div class="text-right mt-3">
+                        <a href="#" class="text-sm text-blue-600 hover:underline">View All →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Forms Download Section -->
+    <section id="forms" class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl font-bold text-center mb-8 text-blue-900">DOWNLOAD FORMS</h2>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="bg-gray-50 rounded-lg p-3 text-center">
+                    <div class="bg-blue-100 p-3 rounded-lg inline-block mb-2">
+                        <i class="fas fa-file-pdf text-red-600 text-2xl"></i>
+                    </div>
+                    <h4 class="font-medium">PAN Card Form</h4>
+                    <button class="text-xs bg-red-600 text-white px-3 py-1 rounded-full mt-2">Download</button>
+                </div>
+                
+                <div class="bg-gray-50 rounded-lg p-3 text-center">
+                    <div class="bg-blue-100 p-3 rounded-lg inline-block mb-2">
+                        <i class="fas fa-file-pdf text-red-600 text-2xl"></i>
+                    </div>
+                    <h4 class="font-medium hindi">आधार अपडेट फॉर्म</h4>
+                    <button class="text-xs bg-red-600 text-white px-3 py-1 rounded-full mt-2">Download</button>
+                </div>
+                
+                <div class="bg-gray-50 rounded-lg p-3 text-center">
+                    <div class="bg-blue-100 p-3 rounded-lg inline-block mb-2">
+                        <i class="fas fa-file-pdf text-red-600 text-2xl"></i>
+                    </div>
+                    <h4 class="font-medium">Job Application Form</h4>
+                    <button class="text-xs bg-red-600 text-white px-3 py-1 rounded-full mt-2">Download</button>
+                </div>
+                
+                <div class="bg-gray-50 rounded-lg p-3 text-center">
+                    <div class="bg-blue-100 p-3 rounded-lg inline-block mb-2">
+                        <i class="fas fa-file-pdf text-red-600 text-2xl"></i>
+                    </div>
+                    <h4 class="font-medium hindi">सामाजिक सुरक्षा योजना फॉर्म</h4>
+                    <button class="text-xs bg-red-600 text-white px-3 py-1 rounded-full mt-2">Download</button>
+                </div>
             </div>
             
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Form 1 -->
-                <div class="bg-white rounded-lg shadow-md p-6 flex items-start">
-                    <div class="bg-blue-100 p-3 rounded-lg mr-4">
-                        <i class="fas fa-file-pdf text-blue-600 text-xl"></i>
-                    </div>
-                    <div>
-                        <h3 class="font-medium text-gray-800 mb-1">Aadhaar Correction Form</h3>
-                        <p class="text-gray-600 text-sm mb-2">For name, address and other details update</p>
-                        <a href="https://uidai.gov.in/images/aadhaar_update_form_1.pdf" target="_blank" class="text-blue-600 text-sm font-medium inline-flex items-center">Download <i class="fas fa-download ml-1"></i></a>
-                    </div>
+            <div class="text-center mt-6">
+                <button class="bg-blue-600 text-white px-6 py-2 rounded-full font-medium hover:bg-blue-700 transition">View All PDF Forms</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Notice Board -->
+    <section id="notice" class="py-12 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <div class="bg-blue-800 text-white px-4 py-3">
+                    <h2 class="text-xl font-bold hindi flex items-center">
+                        <i class="fas fa-bullhorn mr-2"></i> नोटिस बोर्ड (Notice Board)
+                    </h2>
                 </div>
-                
-                <!-- Form 2 -->
-                <div class="bg-white rounded-lg shadow-md p-6 flex items-start">
-                    <div class="bg-blue-100 p-3 rounded-lg mr-4">
-                        <i class="fas fa-file-pdf text-blue-600 text-xl"></i>
-                    </div>
-                    <div>
-                        <h3 class="font-medium text-gray-800 mb-1">PAN Application Form</h3>
-                        <p class="text-gray-600 text-sm mb-2">Form 49A for Indian citizens</p>
-                        <a href="https://www.protean-tinpan.com/downloads/pan/download/Form49A_Fill_11072014.pdf" target="_blank" class="text-blue-600 text-sm font-medium inline-flex items-center">Download <i class="fas fa-download ml-1"></i></a>
-                    </div>
-                </div>
-                
-                <!-- Form 3 -->
-                <div class="bg-white rounded-lg shadow-md p-6 flex items-start">
-                    <div class="bg-blue-100 p-3 rounded-lg mr-4">
-                        <i class="fas fa-file-pdf text-blue-600 text-xl"></i>
-                    </div>
-                    <div>
-                        <h3 class="font-medium text-gray-800 mb-1">Ayushman Bharat Form</h3>
-                        <p class="text-gray-600 text-sm mb-2">PMJAY beneficiary registration</p>
-                        <a href="https://pmjay.gov.in/sites/default/files/2019-03/User-registration-form.pdf" target="_blank" class="text-blue-600 text-sm font-medium inline-flex items-center">Download <i class="fas fa-download ml-1"></i></a>
-                    </div>
-                </div>
-                
-                <!-- Form 4 -->
-                <div class="bg-white rounded-lg shadow-md p-6 flex items-start">
-                    <div class="bg-blue-100 p-3 rounded-lg mr-4">
-                        <i class="fas fa-file-pdf text-blue-600 text-xl"></i>
-                    </div>
-                    <div>
-                        <h3 class="font-medium text-gray-800 mb-1">Caste Certificate Form</h3>
-                        <p class="text-gray-600 text-sm mb-2">For SC/ST/OBC categories</p>
-                        <a href="https://edistrict.mp.gov.in/download/certificate/form11" target="_blank" class="text-blue-600 text-sm font-medium inline-flex items-center">Download <i class="fas fa-download ml-1"></i></a>
-                    </div>
-                </div>
-                
-                <!-- Form 5 -->
-                <div class="bg-white rounded-lg shadow-md p-6 flex items-start">
-                    <div class="bg-blue-100 p-3 rounded-lg mr-4">
-                        <i class="fas fa-file-pdf text-blue-600 text-xl"></i>
-                    </div>
-                    <div>
-                        <h3 class="font-medium text-gray-800 mb-1">Income Certificate Form</h3>
-                        <p class="text-gray-600 text-sm mb-2">For various government schemes</p>
-                        <a href="https://edistrict.mp.gov.in/download/certificate/form20" target="_blank" class="text-blue-600 text-sm font-medium inline-flex items-center">Download <i class="fas fa-download ml-1"></i></a>
-                    </div>
-                </div>
-                
-                <!-- Form 6 -->
-                <div class="bg-white rounded-lg shadow-md p-6 flex items-start">
-                    <div class="bg-blue-100 p-3 rounded-lg mr-4">
-                        <i class="fas fa-file-pdf text-blue-600 text-xl"></i>
-                    </div>
-                    <div>
-                        <h3 class="font-medium text-gray-800 mb-1">Domicile Certificate Form</h3>
-                        <p class="text-gray-600 text-sm mb-2">Proof of residence in Madhya Pradesh</p>
-                        <a href="https://edistrict.mp.gov.in/download/certificate/form19" target="_blank" class="text-blue-600 text-sm font-medium inline-flex items-center">Download <i class="fas fa-download ml-1"></i></a>
+                <div class="p-4">
+                    <div class="space-y-4">
+                        <div class="border-b pb-3 mb-3">
+                            <div class="flex justify-between items-start">
+                                <div>
+                                    <h4 class="font-bold text-blue-800">Holiday Notice</h4>
+                                    <p class="text-sm text-gray-600 hindi">28 अक्टूबर को डीपीएफ के कार्यालय बंद रहेंगे</p>
+                                </div>
+                                <span class="text-xs bg-gray-200 px-2 py-1 rounded">25 Oct 2023</span>
+                            </div>
+                        </div>
+                        
+                        <div class="border-b pb-3 mb-3">
+                            <div class="flex justify-between items-start">
+                                <div>
+                                    <h4 class="font-bold text-blue-800">Samagra ID Camp</h4>
+                                    <p class="text-sm text-gray-600">Special camp for family member updates - 30th Oct at Gram Panchayat</p>
+                                </div>
+                                <span class="text-xs bg-gray-200 px-2 py-1 rounded">24 Oct 2023</span>
+                            </div>
+                        </div>
+                        
+                        <div class="border-b pb-3 mb-3">
+                            <div class="flex justify-between items-start">
+                                <div>
+                                    <h4 class="font-bold text-blue-800 hindi">आयुष्मान भारत शिविर</h4>
+                                    <p class="text-sm text-gray-600 hindi">1 नवंबर को प्राथमिक स्वास्थ्य केंद्र पर गोल्डन कार्ड बनवाएं</p>
+                                </div>
+                                <span class="text-xs bg-gray-200 px-2 py-1 rounded">22 Oct 2023</span>
+                            </div>
+                        </div>
+                        
+                        <div class="">
+                            <div class="flex justify-between items-start">
+                                <div>
+                                    <h4 class="font-bold text-blue-800">Aadhaar Update Camp</h4>
+                                    <p class="text-sm text-gray-600 hindi">2 नवंबर को सार्थक ऑनलाइन सेंटर पर विशेष शिविर</p>
+                                </div>
+                                <span class="text-xs bg-gray-200 px-2 py-1 rounded">20 Oct 2023</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Trust Connect Section -->
+    <section class="py-12 bg-blue-50">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-2xl font-bold mb-2 text-blue-900">Trusted By 5000+ Customers</h2>
+            <p class="mb-6 hindi">ग्रामीणों का विश्वसनीय डिजिटल सहयोगी</p>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-8">
+                <div class="bg-white p-4 rounded-lg shadow-sm">
+                    <div class="text-blue-600 text-3xl mb-2">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="font-bold text-xl hindi">5000+</h3>
+                    <p class="text-sm">Happy Customers</p>
+                </div>
+                
+                <div class="bg-white p-4 rounded-lg shadow-sm">
+                    <div class="text-blue-600 text-3xl mb-2">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h3 class="font-bold text-xl hindi">40+</h3>
+                    <p class="text-sm">Services Offered</p>
+                </div>
+                
+                <div class="bg-white p-4 rounded-lg shadow-sm">
+                    <div class="text-blue-600 text-3xl mb-2">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h3 class="font-bold text-xl">100%</h3>
+                    <p class="text-sm hindi">अनुमोदित सेवाएँ</p>
+                </div>
+                
+                <div class="bg-white p-4 rounded-lg shadow-sm">
+                    <div class="text-blue-600 text-3xl mb-2">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3 class="font-bold text-xl hindi">5+</h3>
+                    <p class="text-sm">Years of Service</p>
+                </div>
+            </div>
+            
+            <div class="flex flex-wrap justify-center gap-4 mb-8">
+                <img src="https://placehold.co/150x80" alt="Government of Madhya Pradesh certificate of approval" class="h-20">
+                <img src="https://placehold.co/150x80" alt="Digital India initiative partnership logo" class="h-20">
+                <img src="https://placehold.co/150x80" alt="UIDAI authorized center certification" class="h-20">
+                <img src="https://placehold.co/150x80" alt="CSC registration certificate" class="h-20">
+            </div>
+            
+            <button class="bg-yellow-400 text-blue-900 px-6 py-3 rounded-full font-bold shadow-md hover:bg-yellow-500 transition flex items-center mx-auto">
+                <i class="fas fa-phone-alt mr-2"></i> CALL NOW: 9876543210
+            </button>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-12 bg-white">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-12">
-                <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-2">हमसे संपर्क करें / Contact Us</h2>
-                <div class="w-16 h-1 bg-blue-600 mx-auto"></div>
-            </div>
-            
-            <div class="flex flex-col lg:flex-row gap-8">
-                <div class="lg:w-1/2 bg-gray-50 rounded-lg overflow-hidden">
-                    <img src="https://placehold.co/800x400" alt="Map showing location of Sarthak Online Center in Nayagaon, Umaria district with surrounding landmarks" class="w-full h-64 lg:h-full object-cover">
+    <footer id="contact" class="bg-blue-900 text-white">
+        <div class="container mx-auto px-4 py-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Contact Us</h3>
+                    <div class="space-y-2">
+                        <p class="flex items-center">
+                            <i class="fas fa-map-marker-alt mr-2"></i>
+                            <span class="hindi">नयागाँव मुख्य चौराहा, उमरिया (मध्य प्रदेश) 484661</span>
+                        </p>
+                        <p class="flex items-center">
+                            <i class="fas fa-phone-alt mr-2"></i>
+                            9876543210, 9876543211
+                        </p>
+                        <p class="flex items-center">
+                            <i class="fas fa-envelope mr-2"></i>
+                            sarthakonline@gmail.com
+                        </p>
+                        <p class="flex items-center">
+                            <i class="fas fa-clock mr-2"></i>
+                            <span class="hindi">सुबह 9:00 - शाम 8:00 (रविवार को भी खुला)</span>
+                        </p>
+                    </div>
                 </div>
                 
-                <div class="lg:w-1/2">
-                    <div class="bg-gray-50 p-6 rounded-lg">
-                        <h3 class="text-xl font-semibold text-gray-800 mb-4">Sarthak Online Center</h3>
-                        
-                        <div class="space-y-4">
-                            <div class="flex items-start">
-                                <i class="fas fa-map-marker-alt text-blue-600 mt-1 mr-3"></i>
-                                <div>
-                                    <p class="font-medium text-gray-800">Address</p>
-                                    <p class="text-gray-600">Main Road, Near Post Office<br>Nayagaon, Umaria (MP) - 484661</p>
-                                </div>
-                            </div>
-                            
-                            <div class="flex items-start">
-                                <i class="fas fa-phone-alt text-blue-600 mt-1 mr-3"></i>
-                                <div>
-                                    <p class="font-medium text-gray-800">Phone</p>
-                                    <p class="text-gray-600">+917000873075</p>
-                                </div>
-                            </div>
-                            
-                            <div class="flex items-start">
-                                <i class="fas fa-envelope text-blue-600 mt-1 mr-3"></i>
-                                <div>
-                                    <p class="font-medium text-gray-800">Email</p>
-                                    <p class="text-gray-600">sunilsinghr672@gmail.com</p>
-                                </div>
-                            </div>
-                            
-                            <div class="flex items-start">
-                                <i class="fas fa-clock text-blue-600 mt-1 mr-3"></i>
-                                <div>
-                                    <p class="font-medium text-gray-800">Opening Hours</p>
-                                    <p class="text-gray-600">Monday to Saturday: 9:00 AM - 8:00 PM<br>Sunday: Closed</p>
-                                </div>
-                            </div>
-                            
-                            <div class="pt-4">
-                                <button class="bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded-lg flex items-center">
-                                    <i class="fab fa-whatsapp mr-2"></i> Chat on WhatsApp
-                                </button>
-                            </div>
-                        </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-yellow-400 hindi">ऑनलाइन सेवाएँ</a></li>
+                        <li><a href="#" class="hover:text-yellow-400">Document Requirements</a></li>
+                        <li><a href="#" class="hover:text-yellow-400 hindi">फॉर्म्स डाउनलोड</a></li>
+                        <li><a href="#" class="hover:text-yellow-400">Government Portals</a></li>
+                        <li><a href="#" class="hover:text-yellow-400 hindi">फीस ढांचा</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Follow Us</h3>
+                    <div class="flex space-x-4 mb-4">
+                        <a href="#" class="bg-blue-800 w-10 h-10 rounded-full flex items-center justify-center hover:bg-yellow-400 hover:text-blue-900 transition">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="bg-blue-800 w-10 h-10 rounded-full flex items-center justify-center hover:bg-yellow-400 hover:text-blue-900 transition">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="#" class="bg-blue-800 w-10 h-10 rounded-full flex items-center justify-center hover:bg-yellow-400 hover:text-blue-900 transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="bg-blue-800 w-10 h-10 rounded-full flex items-center justify-center hover:bg-yellow-400 hover:text-blue-900 transition">
+                            <i class="fab fa-youtube"></i>
+                        </a>
                     </div>
+                    
+                    <h4 class="font-medium mb-2 hindi">हमारा मोटो</h4>
+                    <p class="text-sm italic hindi">"आपकी सेवा में समर्पित - आपके दस्तावेज़ हमारी ज़िम्मेदारी"</p>
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-blue-900 text-white pt-12 pb-6">
-        <div class="container mx-auto px-4">
-            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
-                <div>
-                    <h3 class="text-lg font-semibold mb-4">Sarthak Digital e-Service </h3>
-                    <p class="text-blue-200 mb-4">Your one-stop solution for all government services in Nayagaon, Umaria (MP).</p>
-                    <div class="flex space-x-4">
-                        <a href="#" class="text-blue-200 hover:text-white"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="text-blue-200 hover:text-white"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="text-blue-200 hover:text-white"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="text-blue-200 hover:text-white"><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-                
-                <div>
-                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
-                    <ul class="space-y-2">
-                        <li><a href="#" class="text-blue-200 hover:text-white">Home</a></li>
-                        <li><a href="#services" class="text-blue-200 hover:text-white">Services</a></li>
-                        <li><a href="#" class="text-blue-200 hover:text-white">Schemes</a></li>
-                        <li><a href="#" class="text-blue-200 hover:text-white">Downloads</a></li>
-                        <li><a href="#contact" class="text-blue-200 hover:text-white">Contact</a></li>
-                    </ul>
-                </div>
-                
-                <div>
-                    <h3 class="text-lg font-semibold mb-4">Government Links</h3>
-                    <ul class="space-y-2">
-                        <li><a href="https://mp.gov.in" target="_blank" class="text-blue-200 hover:text-white">MP Government</a></li>
-                        <li><a href="https://india.gov.in" target="_blank" class="text-blue-200 hover:text-white">India.gov.in</a></li>
-                        <li><a href="https://mponline.gov.in" target="_blank" class="text-blue-200 hover:text-white">MP Online</a></li>
-                        <li><a href="https://edistrict.mp.gov.in" target="_blank" class="text-blue-200 hover:text-white">eDistrict MP</a></li>
-                        <li><a href="https://uidai.gov.in" target="_blank" class="text-blue-200 hover:text-white">UIDAI</a></li>
-                    </ul>
-                </div>
-                
-                <div>
-                    <h3 class="text-lg font-semibold mb-4">Opening Hours</h3>
-                    <ul class="space-y-2">
-                        <li class="flex justify-between text-blue-200">
-                            <span>Monday - Friday</span>
-                            <span>9:30AM - 6PM</span>
-                        </li>
-                        <li class="flex justify-between text-blue-200">
-                            <span>Saturday</span>
-                            <span>9:30AM - 2PM</span>
-                        </li>
-                        <li class="flex justify-between text-blue-200">
-                            <span>Sunday</span>
-                            <span>Closed</span>
-                        </li>
-                        <li class="flex justify-between text-blue-200">
-                            <span>Public Holidays</span>
-                            <span>Closed</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="border-t border-blue-800 mt-8 pt-6 text-center text-blue-300 text-sm">
-                <p>&copy; 2023 Sarthak Digital E-Service, Nayagaon, Umaria (MP). All Rights Reserved.</p>
-                <p class="mt-1">A Government Recognized Service Center</p>
+        
+        <div class="bg-blue-950 py-3">
+            <div class="container mx-auto px-4 text-center text-sm">
+                <p>© 2023 Sarthak Online Center. All Rights Reserved. | <a href="#" class="hover:text-yellow-400">Privacy Policy</a> | <a href="#" class="hover:text-yellow-400 hindi">कार्यप्रणाली</a></p>
+                <p class="mt-1 hindi">सारथी डिजिटल सर्विसेज प्राइवेट लिमिटेड के तहत एक अभिनव प्रयास</p>
             </div>
         </div>
     </footer>
 
     <script>
-        // Simple WhatsApp click handler - replace with actual number for production
-        document.querySelectorAll('[href="#contact"], .fa-whatsapp').forEach(el => {
-            el.addEventListener('click', function() {
-                window.open('https://wa.me/7000873075', '_blank');
+        // Simple scrolling news ticker effect
+        const marquee = document.querySelector('.marquee');
+        if (marquee) {
+            const container = marquee.parentNode;
+            const content = marquee.innerHTML;
+            
+            // Duplicate content to create seamless scrolling
+            marquee.innerHTML = content + content;
+            
+            // Calculate animation duration based on content width
+            const textWidth = marquee.scrollWidth / 2;
+            const width = container.offsetWidth;
+            const duration = Math.max(10, textWidth / 50); // pixels per second
+            
+            marquee.style.animationDuration = duration + 's';
+        }
+        
+        // Service cards animation on hover
+        const serviceCards = document.querySelectorAll('.service-card');
+        serviceCards.forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transition = 'transform 0.3s ease, box-shadow 0.3s ease';
             });
         });
     </script>
