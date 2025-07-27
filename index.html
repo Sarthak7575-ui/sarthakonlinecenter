@@ -72,20 +72,31 @@
                 </ul>
             </div>
         </nav>
-        
-        <!-- Scrolling News Ticker -->
-        <div class="bg-yellow-400 text-blue-900 font-bold py-1">
-            <div class="container mx-auto px-4 overflow-hidden">
-                <div class="marquee">
-                    <span class="inline-block px-2 hindi">नया अपडेट:</span>
-                    <span class="inline-block px-2">Ayushman Bharat registration extended till 30th November</span>
-                    <span class="inline-block px-2 hindi">•</span>
-                    <span class="inline-block px-2 hindi">समग्र आईडी अपडेट के लिए आवेदन खुले</span>
-                    <span class="inline-block px-2 hindi">•</span>
-                    <span class="inline-block px-2">MPPSC Pre Exam admit cards available now</span>
-                </div>
-            </div>
-        </div>
+
+        <!-- 🔁 Scrolling Ticker Starts -->
+<div class="bg-yellow-400 text-blue-900 font-bold py-1 overflow-hidden whitespace-nowrap">
+  <div class="animate-marquee inline-block">
+    <span class="mx-4">🟢 नया अपडेट: Ayushman Bharat पंजीकरण 30 नवम्बर तक बढ़ाया गया है</span>
+    <span class="mx-4">🔵 समग्र आईडी अपडेट के लिए आवेदन खुले हैं</span>
+    <span class="mx-4">🟠 MPPSC Pre Exam के प्रवेश पत्र जारी हो चुके हैं</span>
+    <span class="mx-4">🔴 PTII योजना का लाभ अब सभी पात्र नागरिक ले सकते हैं</span>
+  </div>
+</div>
+
+<!-- Scrolling Animation -->
+<style>
+@keyframes marquee {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+.animate-marquee {
+  display: inline-block;
+  white-space: nowrap;
+  animation: marquee 25s linear infinite;
+}
+</style>
+<!-- 🔁 Scrolling Ticker Ends -->
+
     </header>
 
     <!-- Hero Section -->
